@@ -1,12 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  sendAnnouncement() {
-    var announcement = {
-      sales: this.get('sales') ? this.get('sales'): "",
-      weather: this.get('weather') ? this.get('weather'): "",
-      news: this.get('news') ? this.get('news'): ""
-    };
-    this.sendAction('sendAnnouncement', announcement);
+  actions: {
+    delete(announcement) {
+      if (confirm('Are you sure you want to delete this announcement?')) {
+        this.sendAction('destroyAnnouncement', announcement);
+      }
+    }
+
   }
 });

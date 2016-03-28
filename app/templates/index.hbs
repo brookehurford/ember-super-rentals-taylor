@@ -10,12 +10,7 @@ We hope you find exactly what you're looking for in a place to stay.
 
 {{new-rental save2="save3"}}
 
-<h1>Announcements from Admin:</h1>
-<ul>
-  {{#each model as |announcement|}}
-    {{announcement-tile announcement=announcement sendAnnouncement="sendAnnouncement"}}
-  {{/each}}
-</ul>
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+{{#link-to 'admin'}}View Announcements from Admin{{/link-to}}

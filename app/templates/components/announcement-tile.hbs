@@ -1,2 +1,6 @@
 
-<li>{{announcement.sales}} {{announcement.weather}} {{announcement.news}}</li>
+<li><p>Sale Alert: {{announcement.sales}}</p>
+    <p>Weather Alert: {{announcement.weather}}</p>
+    <p>News: {{announcement.news}}</p>
+    <button {{action 'delete' announcement}}>Delete</button>
+</li>

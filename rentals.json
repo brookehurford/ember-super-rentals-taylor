@@ -17,5 +17,10 @@
     "type": "Apartment",
     "bedrooms": 3,
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg"
-  }]
+  }],
+  "announcements":[{
+    "sales": "We are having a sale stay in Seattle.",
+    "weather": "Watch out for storms in Illinois.",
+    "news": "Bernie ROXXXX"
+    }]
 }

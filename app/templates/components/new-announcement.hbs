@@ -1,1 +1,24 @@
-{{yield}}
+
+<p>Send a message to your users!</p>
+
+<h1>New Announcement</h1>
+ <div>
+   <form>
+     <div class="form-group">
+       <label for="sales">Sales</label>
+       {{textarea value=sales id="sales"}}
+     </div>
+
+     <div class="form-group">
+       <label for="weather">Weather</label>
+       {{textarea value=weather id="weather"}}
+     </div>
+
+     <div class="form-group">
+       <label for="news">News</label>
+       {{textarea value=news id="news"}}
+     </div>
+
+     <button {{action 'sendAnnouncement' announcement}}>Submit</button>
+   </form>
+ </div>
