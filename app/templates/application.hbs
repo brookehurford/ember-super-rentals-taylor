@@ -1,3 +1,20 @@
 
 
-{{outlet}}
+<!-- The URL translated by the router to the route handler determines the template that will populate 'outlet'. As the URL changes, the template filling the 'outlet' changes.
+
+The application template is where headers, footers, nav bars and any other content that should be on every page of the application should go. Let's add a header, footer, and Bootstrap container to our application template:-->
+
+
+<header class = "jumbotron">
+  <h1>Super Rentals</h1>
+</header>
+
+<div class="container">
+  {{outlet}}
+</div>
+
+<hr>
+
+<footer>
+  {{#link-to 'contact'}}Our representatives would love to help!{{/link-to}}
+</footer>
